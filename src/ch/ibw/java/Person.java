@@ -7,18 +7,17 @@ package ch.ibw.java;
 * Person p = new Person();
 *
 * Die Person hat noch keine Attribute gesetzt.
-* Attribut setzen und Ausgeben:
+* Attribute setzen und Ausgeben:
 *
 * p.alter = 18;
 * System.out.println(p1.alter);
 * */
-class Person {
-  String vorname;
-  String nachname;
-  int alter;
+public class Person {
+  public String vorname = ""; // Wert ist immer "", sofern nicht anders von Aussen gesetzt.
+  public String nachname;     // Äquivalent zu: String nachname = null;
+  public int alter = 0;       // "= 0" ist überflüssig, da es für primitive Datentypen immer einen Default-Wert gibt.
 
   // Ohne toString Methode wird einfach nur die Speicheraddresse ausgegeben, wie bei einem Array.
-  //  @Override
 //  public String toString() {
 //    return "Person{" +
 //            "vorname='" + vorname + '\'' +
@@ -26,29 +25,4 @@ class Person {
 //            ", alter=" + alter +
 //            '}';
 //  }
-}
-
-public class ClassesObjects {
-
-  public static void main(String[] args) {
-    createPerson();
-  }
-
-  private static void createPerson() {
-    Person p1 = new Person();
-    p1.alter = 18;
-    p1.vorname = "Jean";
-    p1.nachname = "Claude";
-
-    System.out.println(p1);
-
-    // --------------------------------
-
-    Person p2 = new Person();
-    p2.alter = 42;
-    p2.vorname = "Martin";
-    p2.nachname = "Jörg";
-
-    System.out.println(p2);
-  }
 }
