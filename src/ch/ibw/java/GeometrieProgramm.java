@@ -7,16 +7,6 @@ public class GeometrieProgramm {
         Circle circle1 = Circle.create(6);
 
         System.out.println(circle1.calcSurface());
-
-
     }//main
-
-
-
-
-
-
-
-
 
 }
