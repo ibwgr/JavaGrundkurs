@@ -17,7 +17,15 @@ public class Person {
   public String nachname;     // Äquivalent zu: String nachname = null;
   public int alter = 0;       // "= 0" ist überflüssig, da es für primitive Datentypen immer einen Default-Wert gibt.
 
-  // Ohne toString Methode wird einfach nur die Speicheraddresse ausgegeben, wie bei einem Array.
+  @Override
+  public String toString() {
+    return "Person{" +
+            "vorname='" + vorname + '\'' +
+            ", nachname='" + nachname + '\'' +
+            ", alter=" + alter +
+            '}';
+  }
+// Ohne toString Methode wird einfach nur die Speicheraddresse ausgegeben, wie bei einem Array.
 //  public String toString() {
 //    return "Person{" +
 //            "vorname='" + vorname + '\'' +
