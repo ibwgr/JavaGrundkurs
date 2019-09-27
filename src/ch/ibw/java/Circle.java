@@ -5,7 +5,7 @@ public class Circle {
 
     public Circle(double radius) {
         this.radius = radius;
-    }
+    dfgh}
 
     public void circumference() {
         System.out.println("Der Umfang vom Radius: " + this.radius + " ist " + Math.round(2 * this.radius * Math.PI));
