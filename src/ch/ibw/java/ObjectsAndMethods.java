@@ -19,7 +19,7 @@ class Rectangle {
   // Rectangle.area() geht nicht.
   // new Rectangle(1, 2).area() geht.
   // int = Type des Rückgabewertes
-  int area(){
+  int area() {
     return length * height;
   }
 
