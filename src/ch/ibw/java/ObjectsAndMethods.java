@@ -2,8 +2,9 @@ package ch.ibw.java;
 
 class Rectangle {
   // private = nur innerhalb der Klasse sichtbar
-  private int length;
-  private int height;
+  // final   = kann nur einmal gesetzt werden, spätestens im Konstruktor.
+  private final int length;
+  private final int height;
 
   // Konstruktor
   // Erlaubt zu definieren, wie ein Objekt erstellt wird.
@@ -32,13 +33,13 @@ class Rectangle {
 public class ObjectsAndMethods {
 
   // static = Klassenmethode, kein Zugriff auf Instanzvariablen!
-  // void = Type des Rückgabewertes. void steht für "nichts".
-  // Es ist also nicht erlaubt, einen Werte zu retournieren.
+  // void   = Type des Rückgabewertes. void steht für "nichts".
+  //          Es ist also nicht erlaubt, einen Werte zu retournieren.
   public static void main(String[] args) {
     Rectangle rect = new Rectangle(10, 5);
     System.out.println(rect.area());
 
-    // return 1; nicht erlaubt, weil 1 vom Typ int ist und nicht vom Typ void.
-    // return; ok, z.B. für frühzeitiges verlassen der Methode innerhalb einer if
+    // return 1;    // nicht erlaubt, weil 1 vom Typ int ist und nicht vom Typ void.
+    // return;      // ok, z.B. für frühzeitiges verlassen der Methode innerhalb einer if
   }
 }

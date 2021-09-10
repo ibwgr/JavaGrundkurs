@@ -43,7 +43,7 @@ public class ClassesAndMethods {
   }
 
   // überlade die Methode createPersonWithName
-  // überladen heisst: gleicher Name, andere Parameter
+  // überladen heisst: gleicher Name und Rückgabetyp, aber andere Parameter
   static Person createPersonWithName(String vorname, String nachname) {
     Person p1 = new Person();
     p1.alter = 18;
