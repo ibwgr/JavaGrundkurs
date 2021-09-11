@@ -39,5 +39,9 @@ public class ClassesAndObjects {
     persons[1] = p2;
     System.out.println(persons);
     System.out.println(persons.length);
+
+    Calculator calculator = new Calculator();
+    double a, b;
+    
   }
 }
