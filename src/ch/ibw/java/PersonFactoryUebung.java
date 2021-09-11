@@ -13,5 +13,25 @@ public class PersonFactoryUebung {
      *
      * Hinweis: String.split, IOTools
      * */
+
+    int anzahl = IOTools.readInt("Anzahl Personen?");
+    Person[] personen = new Person[anzahl];
+
+    for (int personNummer = 0; personNummer < anzahl; personNummer++) {
+      String eingabe = IOTools.readString("Vorname:Nachname:Alter bitte eingeben!");
+
+      String[] eingaben = eingabe.split(":");
+
+      Person p = new Person();
+      p.vorname = eingaben[0];
+      p.nachname = eingaben[1];
+      p.alter = Integer.parseInt(eingaben[2]);
+
+      personen[personNummer] = p;
+    }
+
+    for (Person p : personen){
+      System.out.println(p.vorname);
+    }
   }
 }
