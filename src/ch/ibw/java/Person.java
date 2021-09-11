@@ -13,17 +13,45 @@ package ch.ibw.java;
  * System.out.println(p1.alter);
  * */
 public class Person {
+  private String name;
+  private String prename;
+  private int age;
   public String vorname = ""; // Wert ist immer "", sofern nicht anders von Aussen gesetzt.
   public String nachname;     // Äquivalent zu: String nachname = null;
   public int alter = 0;       // "= 0" ist überflüssig, da es für primitive Datentypen immer einen Default-Wert gibt.
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getPrename() {
+    return prename;
+  }
+
+  public void setPrename(String prename) {
+    this.prename = prename;
+  }
+
+  public int getAge() {
+    return age;
+  }
+
+  public void setAge(int age) {
+    this.age = age;
+  }
+
 
   // Ohne toString Methode wird einfach nur die Speicheraddresse ausgegeben, wie bei einem Array.
   @Override
   public String toString() {
     return "Person{" +
-            "vorname='" + vorname + '\'' +
-            ", nachname='" + nachname + '\'' +
-            ", alter=" + alter +
+            "vorname='" + getPrename() + '\'' +
+            ", nachname='" + getName() + '\'' +
+            ", alter=" + getAge() +
             '}';
   }
 }

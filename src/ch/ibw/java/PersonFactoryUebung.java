@@ -1,4 +1,5 @@
 package ch.ibw.java;
+import java.util.Scanner;
 
 public class PersonFactoryUebung {
 
@@ -13,13 +14,24 @@ public class PersonFactoryUebung {
      *
      * Hinweis: String.split, IOTools
      * */
+    Scanner sc = new Scanner(System.in);
+    int anzahl;
+    System.out.println("Wieviele Personen möchtest du bauen?");
+    anzahl=sc.nextInt();
+    Person[] p = new Person[anzahl];
 
-    int anzahl = IOTools.readInt("Anzahl Personen=");
-    Person [] personen = new Person[anzahl];
-
-    for (int i = 0; i < anzahl; i++){
-      String eingabe = IOTools.readString("Vorname:Nachme:Alter bitte eingeben!");
-
+    for(int i=0;i< p.length;i++){
+      System.out.println("Gibt die Daten für Person " + (i+1) + " ein!");
+      Person ppl = new Person();
+      System.out.print("Name: ");
+      ppl.setName(sc.next());
+      System.out.print("Vorname: ");
+      ppl.setPrename(sc.next());
+      System.out.print("Alter: ");
+      ppl.setAge(sc.nextInt());
+      p[i]=ppl;
     }
+    System.out.println("Anzahl Datensätze im Array " + p.length);
+    for (Person ppl:p) System.out.println(ppl.toString());
   }
 }
