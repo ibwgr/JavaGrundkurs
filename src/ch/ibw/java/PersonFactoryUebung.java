@@ -1,5 +1,7 @@
 package ch.ibw.java;
 
+import Prog1Tools.IOTools;
+
 public class PersonFactoryUebung {
 
   public static void main(String[] args) {
@@ -13,5 +15,32 @@ public class PersonFactoryUebung {
      *
      * Hinweis: String.split, IOTools
      * */
+
+    int anzahl = IOTools.readInt("Anzahl Personen?");
+
+    Person[] personen = new Person[anzahl];
+
+    for (int personNummer = 0; personNummer < anzahl; personNummer++) {
+      String eingabe = IOTools.readString("Vorname:Nachname:Alter eingeben.");
+
+      String[] eingaben = eingabe.split( ":");
+
+
+      Person p = new Person();
+      p.vorname = eingaben[0];
+      p.nachname = eingaben[1];
+      p.alter = Integer.parseInt(eingaben[2]);
+
+      personen[personNummer] = p;
+
+      //System.out.println("p.vorname "+"p.nachname "+"p.alter");
+    }
+
+    for (Person p : personen){
+      System.out.println(p.vorname);
+      System.out.println(p.nachname);
+      System.out.println(p.alter);
+    }
+
   }
 }
