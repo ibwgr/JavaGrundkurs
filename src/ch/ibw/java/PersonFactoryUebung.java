@@ -23,13 +23,13 @@ public class PersonFactoryUebung {
     for (int personNummer = 0; personNummer < anzahl; personNummer++) {
       String eingabe = IOTools.readString("Vorname:Nachname:Alter eingeben.");
 
-      String[] eingaben = eingabe.split(regex":");
+      String[] eingaben = eingabe.split( ":");
 
 
       Person p = new Person();
       p.vorname = eingaben[0];
       p.nachname = eingaben[1];
-      p.alter = Integer.parseInt([2]);
+      p.alter = Integer.parseInt(eingaben[2]);
 
       personen[personNummer] = p;
 
@@ -38,7 +38,7 @@ public class PersonFactoryUebung {
 
     for (Person p : personen){
       System.out.println(p.vorname);
-      System.out.println(p.name);
+      System.out.println(p.nachname);
       System.out.println(p.alter);
     }
 
