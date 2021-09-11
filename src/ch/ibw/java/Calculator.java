@@ -1,5 +1,5 @@
 package ch.ibw.java;
-
+// Test Klasse für einen einfachen Rechner
 public class Calculator {
     private double a, b;
 
