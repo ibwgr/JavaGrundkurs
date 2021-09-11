@@ -33,7 +33,7 @@ public class PersonFactoryUebung {
 
       personen[personNummer] = p;
 
-      //System.out.println("p.vorname "+"p.nachname "+"p.alter");
+      System.out.println("p.vorname "+"p.nachname "+"p.alter");
     }
 
     for (Person p : personen){

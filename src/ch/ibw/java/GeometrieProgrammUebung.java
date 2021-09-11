@@ -41,7 +41,7 @@ public class GeometrieProgrammUebung {
 
     System.out.println(circle);
 
-    GeometrieProgrammUebung.berechnungUmfang(circle);
+    //GeometrieProgrammUebung.berechnungUmfang(circle);
   }
 
   public static void berechnungUmfang(Circle c) {
