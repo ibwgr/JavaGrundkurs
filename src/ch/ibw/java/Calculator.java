@@ -7,4 +7,8 @@ public class Calculator {
         return  a * b;
     }
 
+    public double squareCalculate(double a){
+        return a*a;
+    }
+
 }
