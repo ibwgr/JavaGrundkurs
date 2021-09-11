@@ -41,7 +41,7 @@ public class ClassesAndObjects {
     System.out.println(persons.length);
 
     Calculator calculator = new Calculator();
-    double a, b;
-    
+    System.out.println(calculator.rectangleCalculate(12.2, 33.4));
+
   }
 }
