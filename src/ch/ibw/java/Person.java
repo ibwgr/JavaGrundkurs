@@ -1,6 +1,7 @@
 package ch.ibw.java;
 
 /*
+ * New by Urs Heusser
  * Bauplan um eine Person mit drei Attributen (auch Instanzvariablen genannt) zu erstellen.
  * Man sagt auch: ein Objekt vom Typ Person erstellen.
  *
