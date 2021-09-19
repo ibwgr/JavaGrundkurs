@@ -16,6 +16,7 @@ public class Person {
   private String name;
   private String prename;
   private int age;
+
   public String vorname = ""; // Wert ist immer "", sofern nicht anders von Aussen gesetzt.
   public String nachname;     // Äquivalent zu: String nachname = null;
   public int alter = 0;       // "= 0" ist überflüssig, da es für primitive Datentypen immer einen Default-Wert gibt.
