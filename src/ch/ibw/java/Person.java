@@ -50,9 +50,9 @@ public class Person {
   @Override
   public String toString() {
     return "Person{" +
-            "vorname='" + getPrename() + '\'' +
-            ", nachname='" + getName() + '\'' +
-            ", alter=" + getAge() +
+            "Vorname=>'" + this.getPrename() + '\'' +
+            ", Nachname=>'" + this.getName() + '\'' +
+            ", Alter=>" + this.getAge() +
             '}';
   }
 }

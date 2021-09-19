@@ -31,7 +31,7 @@ public class PersonFactoryUebung {
       ppl.setAge(sc.nextInt());
       p[i]=ppl;
     }
-    System.out.println("Anzahl Datensätze im Array " + p.length);
+    System.out.println("***********************\nAnzahl Datensätze im Array --> " + p.length +"\n***********************");
     for (Person ppl:p) System.out.println(ppl.toString());
   }
 }
