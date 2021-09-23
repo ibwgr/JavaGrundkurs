@@ -10,6 +10,7 @@ public class PersonProgramm {
     Person alterLos = createPerson("Gina", "Truller");
   }
 
+  // überladene Methode
   private static Person createPerson(String vorname, String nachname) {
     Person neuePerson = new Person();
     neuePerson.vorname = vorname;
@@ -17,6 +18,7 @@ public class PersonProgramm {
     return neuePerson;
   }
 
+  // überladene Methode
   private static Person createPerson(String vorname, String nachname, int alter) {
     Person neuePerson = new Person();
     neuePerson.alter = alter;
