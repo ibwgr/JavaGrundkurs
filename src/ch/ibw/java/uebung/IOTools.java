@@ -17,7 +17,7 @@
 */
 
 
-package uebung;  // (Version 2018 ff)
+package ch.ibw.java.uebung;  // (Version 2018 ff)
 
 import java.io.BufferedReader;
 import java.io.IOException;

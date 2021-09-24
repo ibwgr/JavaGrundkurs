@@ -1,4 +1,4 @@
-package uebung;
+package ch.ibw.java.uebung;
 
 public class WorteRatenProgramm {
   static String[] worte = new String[]{

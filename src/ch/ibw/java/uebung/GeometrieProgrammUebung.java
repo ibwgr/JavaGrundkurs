@@ -1,4 +1,4 @@
-package ch.ibw.java;
+package ch.ibw.java.uebung;
 
 class Circle {
   double radius;
