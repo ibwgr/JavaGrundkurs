@@ -6,6 +6,8 @@ public class PersonProgramm {
     Person p2 = createPerson("Peter", "Griffindor", 32);
     Person p3 = createPerson("Jon", "Don", 48);
     System.out.println(p1);
+    System.out.println(p2);
+    System.out.println(p3);
 
     Person alterLos = createPerson("Gina", "Truller");
   }
