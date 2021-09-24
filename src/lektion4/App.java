@@ -34,7 +34,7 @@ public class App {
             for (int i = 0;i<rndWord.length();i++){
                 if (input == rndWord.charAt(i)){
                     wordOut = wordOut.substring(0, i) + input + wordOut.substring(i+1);
-                    points = points+1;
+                    points += 1;
                 }
             }
             System.out.println(wordOut);
