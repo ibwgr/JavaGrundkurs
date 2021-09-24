@@ -1,0 +1,120 @@
+[33mcommit 2a6722fa0623f31bca9b2a7be5f3b75d10f95846[m[33m ([m[1;36mHEAD -> [m[1;32mlocal[m[33m, [m[1;31morigin/local[m[33m)[m
+Author: Urs Heusser <urs.heusser@fhgr.ch>
+Date:   Sun Sep 12 19:45:21 2021 +0200
+
+    Objekt Person angepasst
+
+[33mcommit f7890329b4096517c33a419bf130ac14d5b70c20[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Urs Heusser <urs.heusser@fhgr.ch>
+Date:   Sat Sep 11 16:14:46 2021 +0200
+
+    test
+
+[33mcommit 732d5d03eb9746899139a92897ba13e24f703bef[m[33m ([m[1;31mupstream/master[m[33m)[m
+Author: Ueli Kunz <kunz@ideadapt.net>
+Date:   Sat Sep 11 15:18:15 2021 +0200
+
+    neue uebung2
+
+[33mcommit b4f47d40c276106150c1fb521ce68634a02afd72[m
+Author: Ueli Kunz <kunz@ideadapt.net>
+Date:   Fri Sep 10 20:18:21 2021 +0200
+
+    clean up a little.
+
+[33mcommit 1379c30beda3ad68ce12615ec4a2dd2d1ebcb32e[m
+Merge: 616c33e 2ec729f
+Author: Ueli Kunz <kunz@ideadapt.net>
+Date:   Wed Sep 8 23:26:09 2021 +0200
+
+    Merge branch 'master' of github.com:ibwgr/JavaGrundkurs
+
+[33mcommit 616c33e62ade9ea41e13fabdc7904c33f3df0613[m
+Author: Ueli Kunz <kunz@ideadapt.net>
+Date:   Wed Sep 8 23:21:25 2021 +0200
+
+    clean up a little.
+
+[33mcommit 2ec729ffb365495b3c89dd2ebb8f2a556def5044[m
+Merge: 40404ea db143fb
+Author: ideadapt <kunz@ideadapt.net>
+Date:   Fri Sep 27 15:07:54 2019 +0200
+
+    Merge pull request #8 from Hubbacca/fork
+    
+    forken bro
+
+[33mcommit db143fb5a693b9224c8b9b0f6937f2e9009c34ee[m
+Author: stefan <stefan@home.ch>
+Date:   Fri Sep 27 15:02:31 2019 +0200
+
+    forken bro
+
+[33mcommit 40404ea07c28c7f9d3f8f4faca5ec8cd4207399b[m
+Merge: 4820f48 f35cf81
+Author: vinkje <54735479+vinkja@users.noreply.github.com>
+Date:   Fri Sep 27 14:29:23 2019 +0200
+
+    Merge pull request #2 from ibwgr/FeatureBranch
+    
+    added some Files
+
+[33mcommit 4820f484d8ebc194e9b1ec46d748dc50bbf3a738[m
+Merge: 674c677 c301972
+Author: sascha1987 <54737475+sascha1987@users.noreply.github.com>
+Date:   Fri Sep 27 14:23:54 2019 +0200
+
+    Merge pull request #4 from ibwgr/Geometrie
+    
+    Geometrie
+
+[33mcommit 674c67776c79c7b98935ad89cb52f1f8f2b7e626[m
+Merge: 650a250 e8bf02d
+Author: Hubbacca <54737443+Hubbacca@users.noreply.github.com>
+Date:   Fri Sep 27 14:22:26 2019 +0200
+
+    Merge pull request #6 from ibwgr/Java1
+    
+    Java1
+
+[33mcommit e8bf02d31c66cceb215ce7cf64959a96accde0c3[m
+Author: stefan <stefan@home.ch>
+Date:   Fri Sep 27 14:08:52 2019 +0200
+
+    Java Aenderung
+
+[33mcommit f35cf8152ab2738c725952145e615b7f8462bf85[m
+Author: vinkja <spescha_marc@yahoo.de>
+Date:   Fri Sep 27 14:06:47 2019 +0200
+
+    added some Files
+
+[33mcommit c301972469bd3d53a333331e57cd3ab02d1eddd6[m
+Author: Sascha <sascha.fluor@gmx.net>
+Date:   Fri Sep 27 14:05:10 2019 +0200
+
+    Geometrie
+
+[33mcommit 023d1bf401c31763dfac0f8604f897534e44b7fe[m
+Author: stefan <stefan@home.ch>
+Date:   Fri Sep 27 14:04:38 2019 +0200
+
+    Aenderung Java
+
+[33mcommit 650a250e857c873513447a73b56ddca197a30a78[m
+Author: Ueli Kunz <kunz@ideadapt.net>
+Date:   Thu Sep 26 23:30:04 2019 +0200
+
+    methods
+
+[33mcommit 1a7f6d59044848367df07374cbab463e32d886d5[m
+Author: Ueli Kunz <kunz@ideadapt.net>
+Date:   Thu Sep 26 22:54:22 2019 +0200
+
+    simplify
+
+[33mcommit 2ec590989238eb48df56a6d96b6e620a29229b6d[m
+Author: Ueli Kunz <kunz@ideadapt.net>
+Date:   Thu Sep 26 21:51:18 2019 +0200
+
+    arrays and classes
