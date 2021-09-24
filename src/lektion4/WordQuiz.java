@@ -2,7 +2,7 @@ package lektion4;
 
 import java.util.Scanner;
 
-public class App {
+public class WordQuiz {
     public static String[] words = {"Auto", "Velo", "Motorfahrrad", "Vater", "Mutter", "Sohn", "Verkehrszeichen","Wasserzeichen","Yathzee", "Schule"};
 
     public static void main(String[] args) {
@@ -11,15 +11,14 @@ public class App {
         int wordCount = words.length;
         int random = (int)(Math.random()*wordCount);
         String rndWord = words[random];
-        String wordOut = "";
-        System.out.println(rndWord);
+        String wordSpacer = "";
+        //System.out.println(rndWord);
 
-        char[] quiz = new char[rndWord.length()];
         for (int i = 0; i < rndWord.length(); i++){
-            wordOut += "-";
-            quiz[i] = rndWord.charAt(i);
+            wordSpacer += "-";
         }
-        System.out.println(wordOut);
+        System.out.println(wordSpacer);
+
 
         /*
         Aufgabe
@@ -27,19 +26,27 @@ public class App {
         Spiel geht bis 0 Punkte oder Wort erraten wurde?
         Am Ende gib die Punktezahl aus
          */
+
         do {
-            points = points-1;
+            points -= 1;
             System.out.print("\nBuchstabe? ");
             char input = sc.next().charAt(0);
             for (int i = 0;i<rndWord.length();i++){
                 if (input == rndWord.charAt(i)){
-                    wordOut = wordOut.substring(0, i) + input + wordOut.substring(i+1);
+                    wordSpacer = wordSpacer.substring(0, i) + input + wordSpacer.substring(i+1);
                     points += 1;
                 }
             }
-            System.out.println(wordOut);
-            System.out.println(points);
-        }while (!wordOut.equals(rndWord));
-        System.out.println("test");
+            System.out.println(wordSpacer);
+            System.out.println("Anzahl Credits: " + points);
+        }while (!wordSpacer.equals(rndWord) && points > 0);
+        if (wordSpacer.equals(rndWord)){
+            System.out.println("***************"+
+                    "\nHerzlichen Glückwunsch, Wort " + wordSpacer + " erraten!"+
+                    "\nSie haben " + points + " Credits übrig!");
+        }
+        if (points <=0){
+            System.out.println("Sie haben keine Credits mehr!");
+        }
     }
 }
