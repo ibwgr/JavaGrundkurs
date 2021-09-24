@@ -1,7 +1,6 @@
 package uebung;
 
 public class WorteRatenProgramm {
-
   static String[] worte = new String[]{
           "Fussball",
           "Velo",
@@ -13,19 +12,19 @@ public class WorteRatenProgramm {
   };
 
   public static void main(String[] args) {
-    int wortCount = worte.length;
-    int zufallsIndex = (int) (Math.random() * wortCount); // 0.14 => 1.4, 0.68 => 6.8, 0.998 => 9.98
+    int anzahlWorte = worte.length;
+    int zufallsIndex = (int) (Math.random() * anzahlWorte);
     String zufallsWort = worte[zufallsIndex];
-//    System.out.println(zufallsWort);
+//    System.out.println(zufallsWort); // Das zu erratende Wort, zu Entwicklungszwecken ausgeben
 
     String loesung = "";
-    for (int i = 0; i < zufallsWort.length(); i++) {
+    while (loesung.length() < zufallsWort.length()) {
       loesung += "_";
     }
     System.out.println(loesung);
 
     boolean ende = false;
-    int geratenTotal = 0;
+    int anzahlRateVersuche = 0;
 
     while (!ende) {
       String geraten = IOTools.readString("Buchstabe?");
@@ -33,9 +32,9 @@ public class WorteRatenProgramm {
       if (geraten.equals(zufallsWort)) {
         ende = true;
       } else {
-        geratenTotal++;
+        anzahlRateVersuche++;
 
-        // ___a___a__
+        // Schreibe "geraten" am richtigen Ort in die "loesung". Aus _ wird also z.B. a
         for (int i = 0; i < zufallsWort.length(); i++) {
           if (geraten.equals(String.valueOf(zufallsWort.charAt(i)))) {
             // Ersetze Zeichen auf Index i im String loesung
@@ -44,7 +43,7 @@ public class WorteRatenProgramm {
         }
         System.out.println(loesung);
 
-        ende = loesung.equals(zufallsWort) || geratenTotal >= 10;
+        ende = loesung.equals(zufallsWort) || anzahlRateVersuche >= 10;
       }
     }
   }
