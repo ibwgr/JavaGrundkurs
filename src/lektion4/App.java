@@ -40,5 +40,6 @@ public class App {
             System.out.println(wordOut);
             System.out.println(points);
         }while (!wordOut.equals(rndWord));
+        System.out.println("test");
     }
 }
