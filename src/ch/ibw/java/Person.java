@@ -25,5 +25,6 @@ public class Person {
             ", nachname='" + nachname + '\'' +
             ", alter=" + alter +
             '}';
+
   }
 }
