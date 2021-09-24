@@ -27,7 +27,7 @@ public class WorteRatenProgramm {
     int anzahlRateVersuche = 0;
 
     while (!ende) {
-      String geraten = IOTools.readString("Buchstabe?");
+      String geraten = IOTools.readString(" Buchstabe? ");
 
       if (geraten.equals(zufallsWort)) {
         ende = true;
