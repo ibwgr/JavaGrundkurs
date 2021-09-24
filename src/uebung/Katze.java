@@ -1,7 +1,8 @@
 package uebung;
 
 public class Katze {
-    public Katze(){
+    public String farbe;
+    Katze(){
 
     }
 }
